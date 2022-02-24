@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		34B0170627C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0170527C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift */; };
-		34B0170827C7CB7000C84570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0170727C7CB7000C84570 /* ContentView.swift */; };
+		34B0170827C7CB7000C84570 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0170727C7CB7000C84570 /* MainView.swift */; };
 		34B0170A27C7CB7100C84570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B0170927C7CB7100C84570 /* Assets.xcassets */; };
 		34B0170D27C7CB7100C84570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B0170C27C7CB7100C84570 /* Preview Assets.xcassets */; };
+		34B0171727C7D4F300C84570 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0171627C7D4F300C84570 /* Models.swift */; };
+		34B0171927C7D57600C84570 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0171827C7D57600C84570 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34B0170227C7CB7000C84570 /* M5_WrapUpChallenge_Nico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M5_WrapUpChallenge_Nico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B0170527C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M5_WrapUpChallenge_NicoApp.swift; sourceTree = "<group>"; };
-		34B0170727C7CB7000C84570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34B0170727C7CB7000C84570 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34B0170927C7CB7100C84570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34B0170C27C7CB7100C84570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34B0171627C7D4F300C84570 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		34B0171827C7D57600C84570 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				34B0170527C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift */,
-				34B0170727C7CB7000C84570 /* ContentView.swift */,
+				34B0171327C7D4A700C84570 /* Views */,
+				34B0171527C7D4C200C84570 /* ViewModels */,
+				34B0171427C7D4BD00C84570 /* Models */,
 				34B0170927C7CB7100C84570 /* Assets.xcassets */,
 				34B0170B27C7CB7100C84570 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				34B0170C27C7CB7100C84570 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34B0171327C7D4A700C84570 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34B0170727C7CB7000C84570 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34B0171427C7D4BD00C84570 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34B0171627C7D4F300C84570 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34B0171527C7D4C200C84570 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				34B0171827C7D57600C84570 /* ContentModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B0170827C7CB7000C84570 /* ContentView.swift in Sources */,
+				34B0171727C7D4F300C84570 /* Models.swift in Sources */,
+				34B0171927C7D57600C84570 /* ContentModel.swift in Sources */,
+				34B0170827C7CB7000C84570 /* MainView.swift in Sources */,
 				34B0170627C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

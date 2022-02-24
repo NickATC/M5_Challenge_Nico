@@ -7,15 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        //
+        Text("\(model.lessons.count)")
+          
+        //
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
+            .environmentObject(ContentModel())
     }
 }

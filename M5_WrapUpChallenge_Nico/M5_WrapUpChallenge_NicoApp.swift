@@ -11,7 +11,8 @@ import SwiftUI
 struct M5_WrapUpChallenge_NicoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(ContentModel())
         }
     }
 }
