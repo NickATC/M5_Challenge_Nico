@@ -9,7 +9,7 @@ import Foundation
 
 class ContentModel: ObservableObject {
     //List of lessons
-    @Published var lessons = [Lesson]()
+    @Published var videos = [Video]()
  
     
     init() {
@@ -22,8 +22,8 @@ class ContentModel: ObservableObject {
         //This will fetch and parse data from remote file
         
         //String path
-        //let urlString = "https://nickatc.github.io/learningAppData/dataChallenge.json" //My personal data.  Works for me!!
-        let urlString = " https://codewithchris.github.io/Module5Challenge/Data.json"  //Chris' data doesn't work for me!
+        let urlString = "https://nickatc.github.io/learningAppData/dataChallenge.json" //My personal data.  Works for me!!
+        //let urlString = " https://codewithchris.github.io/Module5Challenge/Data.json"  //Chris' data doesn't work for me!
         
         //Create URL object
         let url = URL(string: urlString)
@@ -53,11 +53,11 @@ class ContentModel: ObservableObject {
                 let decoder = JSONDecoder()
                 
                 //2.  Decode
-                let lessons = try decoder.decode([Lesson].self, from: data!)
+                let videos = try decoder.decode([Video].self, from: data!)
                 
                 //3.  Append parsed modules into property (array)
                 DispatchQueue.main.async {
-                    self.lessons = lessons
+                    self.videos = videos
                 }
             } catch {
                 //Couldn't parse json

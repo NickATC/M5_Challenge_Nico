@@ -10,7 +10,7 @@ import SwiftUI
 struct LessonView: View {
     
     @EnvironmentObject var model: ContentModel    
-    var lesson: Lesson
+    var video: Video
     
     var body: some View {
         //
@@ -18,15 +18,16 @@ struct LessonView: View {
         VStack (alignment: .leading){
             //Title
             
-            Text("\(lesson.title)")
+            Text("\(video.title)")
                 .font(.headline)
             
             //Video
-            VideoView(videoURL: lesson.url)
+            VideoView(videoURL: video.url)
             
             Spacer()
         }
-        .navigationTitle(Text("Lesson \(lesson.id)"))
+        .padding()
+        .navigationTitle(Text("Lesson \(video.id)"))
         
 
         

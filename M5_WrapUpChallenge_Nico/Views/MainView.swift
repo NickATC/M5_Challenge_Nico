@@ -21,12 +21,12 @@ struct MainView: View {
             VStack {
                 List{
                     
-                    ForEach(model.lessons){ lesson in
+                    ForEach(model.videos){ video in
                             
                             NavigationLink {
-                                LessonView(lesson: lesson)
+                                LessonView(video: video)
                             } label: {
-                                Text("\(lesson.title)")
+                                Text("\(video.title)")
                             }
                         }
                 }
@@ -36,7 +36,6 @@ struct MainView: View {
             //.tint(.black)
         }
                   
-        //
     }
 }
 

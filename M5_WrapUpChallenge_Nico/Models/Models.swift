@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Lesson: Decodable, Identifiable {
+struct Video: Decodable, Identifiable {
     var id: Int
     var title: String
     var url: String
