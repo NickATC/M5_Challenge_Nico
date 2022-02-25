@@ -11,10 +11,31 @@ struct MainView: View {
     
     @EnvironmentObject var model: ContentModel
     
+    //@State var selection: Int?
+    
     var body: some View {
         //
-        Text("\(model.lessons.count)")
-          
+        
+        NavigationView {
+            
+            VStack {
+                List{
+                    
+                    ForEach(model.lessons){ lesson in
+                            
+                            NavigationLink {
+                                LessonView(lesson: lesson)
+                            } label: {
+                                Text("\(lesson.title)")
+                            }
+                        }
+                }
+                
+                .navigationTitle("All Videos")
+            }
+            //.tint(.black)
+        }
+                  
         //
     }
 }

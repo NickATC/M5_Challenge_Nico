@@ -13,6 +13,8 @@
 		34B0170D27C7CB7100C84570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B0170C27C7CB7100C84570 /* Preview Assets.xcassets */; };
 		34B0171727C7D4F300C84570 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0171627C7D4F300C84570 /* Models.swift */; };
 		34B0171927C7D57600C84570 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0171827C7D57600C84570 /* ContentModel.swift */; };
+		34C3C4DD27C7DE970083CBA0 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3C4DC27C7DE970083CBA0 /* LessonView.swift */; };
+		34C3C4E227C7F63F0083CBA0 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3C4E127C7F63F0083CBA0 /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		34B0170C27C7CB7100C84570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34B0171627C7D4F300C84570 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		34B0171827C7D57600C84570 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		34C3C4DC27C7DE970083CBA0 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		34C3C4E127C7F63F0083CBA0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				34B0170727C7CB7000C84570 /* MainView.swift */,
+				34C3C4DC27C7DE970083CBA0 /* LessonView.swift */,
+				34C3C4E127C7F63F0083CBA0 /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C3C4E227C7F63F0083CBA0 /* VideoView.swift in Sources */,
 				34B0171727C7D4F300C84570 /* Models.swift in Sources */,
 				34B0171927C7D57600C84570 /* ContentModel.swift in Sources */,
+				34C3C4DD27C7DE970083CBA0 /* LessonView.swift in Sources */,
 				34B0170827C7CB7000C84570 /* MainView.swift in Sources */,
 				34B0170627C7CB7000C84570 /* M5_WrapUpChallenge_NicoApp.swift in Sources */,
 			);

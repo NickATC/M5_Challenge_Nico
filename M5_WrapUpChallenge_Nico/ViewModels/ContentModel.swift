@@ -22,7 +22,8 @@ class ContentModel: ObservableObject {
         //This will fetch and parse data from remote file
         
         //String path
-        let urlString = "https://nickatc.github.io/learningAppData/dataChallenge.json"
+        //let urlString = "https://nickatc.github.io/learningAppData/dataChallenge.json" //My personal data.  Works for me!!
+        let urlString = " https://codewithchris.github.io/Module5Challenge/Data.json"  //Chris' data doesn't work for me!
         
         //Create URL object
         let url = URL(string: urlString)
@@ -55,7 +56,9 @@ class ContentModel: ObservableObject {
                 let lessons = try decoder.decode([Lesson].self, from: data!)
                 
                 //3.  Append parsed modules into property (array)
-                self.lessons += lessons
+                DispatchQueue.main.async {
+                    self.lessons = lessons
+                }
             } catch {
                 //Couldn't parse json
                 print("Couldn't parse JSON")
@@ -65,8 +68,5 @@ class ContentModel: ObservableObject {
         //Kick off the data task
         
         dataTask.resume()
-
-        
     }
-
 }
